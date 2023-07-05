@@ -33,12 +33,22 @@ console.log("Hello jee kaise ho saare ")
 
 // constructor function -> Pascal Notation
 
-function Rectangle() {
-    this.length = 1;
-    this.breadth = 2;
+function Rectangle(len, bre) {
+    length = len;
+    breadth = bre;
     this.draw = function () {
         console.log("kya hal chal h")
     }
 }
 // object creation using constructoe function
+// new keyword gives an empty object
 let reactangleObject = new Rectangle();
+
+// adding new property in object
+reactangleObject.color = 'yellow';
+console.log(reactangleObject);
+
+// delete property
+delete reactangleObject.color;
+console.log(reactangleObject); 
+
